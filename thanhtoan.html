@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: white;
+            color: black;
+            padding-left: 250px;
+            padding: 10px;
+            margin: 2px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px gray;
+            margin: 0 auto;
+        }
+        .form-group{
+            margin: 10px 2px ;
+            font-size: larger;
+            font-style: normal;
+        }
+        .control{
+            width: 95%;
+            border-radius: 5px;
+            height: 30px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        .button{
+            border-radius: 5px;
+            width: 120px;
+            height: 40px;
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: black;
+            color: white;
+        }
+        .sothich{
+            border: solid 1px black;
+            width: auto;
+            border-radius: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        #kq{
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Thông tin khách hàng</h3>
+        <form class="form">
+            <div class="form-group">
+                <label >Tên khách hàng:</label><br>
+                <input id="masv" class="control" type="text" placeholder="Nhập tên ">
+            </div>
+            <div class="form-group">
+                <label>Địa chỉ:</label><br>
+                <input id="hoten" class="control" type="text" placeholder="Nhập địa chỉ">
+            </div>
+            <div class="form-group">
+                <label>Số điện thoại:</label><br>
+                <input id="mail" class="control" type="text" placeholder="Nhập số điện thoại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="asm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box{
+            background-color: white;
+            color: black;
+            padding-left: 250px;
+            padding: 10px;
+            margin: 2px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px gray;
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .form-group{
+            margin: 10px 2px ;
+            font-size: larger;
+            font-style: normal;
+        }
+        .control{
+            width: 95%;
+            border-radius: 5px;
+            height: 30px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        .cart{
+            border-radius: 10px;
+            right: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: lightgray;
+            width: 1000px;
+
+        }
+        .cart h2{
+            text-align: center;
+        }
+        .cart table{
+            width: 100%;
+
+        }
+        .cart table thead tr th:first-child{
+            text-align: left;
+        }
+        .cart table tr td{
+            border-bottom: 1px solid lightgray;
+            padding: 12px 0 ;
+        }
+        .cart table thead tr th:last-child{
+            text-align: right;
+        }
+        .cart table tbody tr td:last-child{
+            text-align: right;
+        }
+        .thanhtoan{
+            background-color:aqua;
+            display:block;
+            align-items: center;
+            margin-top: 10px;
+            width: 150px;
+            height: 50px;
+            color:black;
+        }
+        .thanhtoan:hover{
+            cursor: pointer;
+            background-color: orangered;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="toggle1">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            AMJ
+        </div>
+        <div class="menua">
+            <a href="danhmucsanpham.html">WOMEN</a>
+            <a href="danhmucsanpham.html">MEN</a>
+            <a href="danhmucsanpham.html">KIDS</a>
+            <a href="danhmucsanpham.html">SPORTS</a>
+            <a href="danhmucsanpham.html">BEAUTY</a>
+        </div>
+        <div class="menub">
+            <a href="">NEW IN</a>
+            <a href="">CLOTHING</a>
+            <a href="">SHOES</a>
+            <a href="">ACCESSORIES</a>
+            <a href="">SPORT</a>
+            <a href="">HOME</a>
+            <a href="">GIFTS</a>
+            <a href="">BRANDS</a>
+            <a href="">DESIGNER</a>
+            <a href="">SNEAKERHUB</a>
+        </div>
+        <div class="user">
+            <a href="dangki.html"><i class="fa-solid fa-user-large"></i></a>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="box">
+        <h3>Thông tin khách hàng</h3>
+        <form class="form">
+            <div class="form-group">
+                <label >Tên khách hàng:</label><br>
+                <input id="masv" class="control" type="text" placeholder="Nhập tên ">
+            </div>
+            <div class="form-group">
+                <label>Địa chỉ:</label><br>
+                <input id="hoten" class="control" type="text" placeholder="Nhập địa chỉ">
+            </div>
+            <div class="form-group">
+                <label>Số điện thoại:</label><br>
+                <input id="mail" class="control" type="text" placeholder="Nhập số điện thoại">
+            </div>
+        </form>
+    </div>
+    <section class="cart">
+        <h2>Giỏ hàng</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Gía SP</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        
+                    </tr>
+    
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="price-total">
+                <p style="font-weight: bold;">Tổng tiền: <span>0</span><sub>đ</sub></p>
+            </div>
+        </form>
+    </section>
+    <button class="thanhtoan">Thanh toán ngay</button>
+</body>
+</html>
+<script src="giohang.js"></script>
+<script>
+    showgiohang_trangthanhtoan();
+</script>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps21179_doquocviet</title>
+    <link rel="stylesheet" href="giohang.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="javacss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .giohang{
+            font-size: 30px;
+            position: absolute;
+            margin-left: 1400px;
+            color: white;
+        }
+        .giohang:hover{
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        var solanmua=0;
+        function dem() {
+            solanmua++;
+            document.getElementById("solanmua").innerHTML=solanmua;
+        }
+    </script>
+</head>
+
+<body>
+    
+    <nav class="nav">
+        <div class="giohang">
+            <i onclick="showcart()" class="fa-solid fa-cart-shopping"><b id="solanmua"></b></i>
+        </div>
+        <div class="menub">
+            <a href="" style="font-size: 40px;"> AMJ</a>
+            <a href="index.html">Home</a>
+            <a href="./dovui.html">Help</a>
+            <a href="#">Cart</a>
+        </div>
+        <div class="smenu">
+            <input type="text" class="menuc" placeholder="Bạn cần gì hôm nay?" />
+        </div>
+    </nav>
+    <div class="dongho">
+        <div class="sp">
+            <h1>Danh mục sản phẩm dành cho bạn ==></h1>
+        </div>
+        <div class="time">
+            <div class="hour" id="hour"></div>
+            <div class="minute" id="minute"></div>
+            <div class="second" id="second"></div>
+        </div>
+    </div>
+    <article></article>
+        <section class="product">
+            <div class="container">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/a12.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>320.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Thời trang trẻ em</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a13.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>220.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Combo chăn gối adidas</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a6.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>350.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Áo thể thao đôi</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a7.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>420.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Áo len mùa đông</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a8.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>270.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Váy nữ</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/a9.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>320.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Sweater nam</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a10.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>220.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Váy nữ dạ hội</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a11.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>350.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Giày thể thao</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A1.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>420.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Jacket nữ</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A2.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>270.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Bad boy</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/a9.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>320.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Sweater nam</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a10.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>220.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Váy nữ dạ hội</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a11.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>350.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Giày thể thao</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A1.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>420.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Jacket nữ</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A2.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>270.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Bad boy</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/a9.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>320.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Sweater nam</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a10.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>220.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Váy nữ dạ hội</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a11.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>350.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Giày thể thao</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A1.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>420.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Jacket nữ</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A2.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>270.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Bad boy</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/a9.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>320.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Sweater nam</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a10.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>220.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Váy nữ dạ hội</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a11.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>350.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Giày thể thao</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A1.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>420.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Jacket nữ</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A2.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>270.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Bad boy</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="product-items">
+                    <div class="product-item">
+                        <img src="./img/a9.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>320.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Sweater nam</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a10.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>220.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Váy nữ dạ hội</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/a11.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>350.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Giày thể thao</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A1.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>420.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Jacket nữ</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="./img/A2.png" alt="">
+                        <div class="product-item-text">
+                            <p><span>270.000</span><sub>đ</sub></p>
+                            <h1 style="font-weight: bold; font-size: 15px;">Bad boy</h1>
+                        </div>
+                        <button  onclick="dem()">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                </div>
+            </div>
+        
+        </section>
+        
+        
+        <section class="cart" id="show">
+            <h2>Giỏ hàng</h2>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Gía SP</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            
+                        </tr>
+        
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <a href="./giohang.html" style="color:red; cursor:pointer;text-decoration: none;">Thanh toán=></a>
+                </table>
+                <div style="text-align: right;" class="price-total">
+                    <p style="font-weight: bold;">Tổng tiền: <span>0</span><sub>đ</sub></p>
+                </div>
+            </form>
+        </section>
+        
+    </article>
+    <div class="tacgia">
+        <hr>
+        <p>
+            Được thiết kế bởi: Đỗ Quốc Việt_PS21179
+        </p>
+    </div>
+    </div>
+</body>
+</html>
+<script src="giohang.js"></script>
+<script>
+    let dh;
+    function tg() {
+        let now = new Date();
+        let hour ,minute,second;
+        hour = now.getHours();
+        minute = now.getMinutes();
+        second = now.getSeconds();
+
+        if(hour<10){
+            document.getElementById("hour").innerText=`0${hour}:`
+        }else{
+            document.getElementById("hour").innerText=`${hour}:`
+        }
+        if(minute<10){
+            document.getElementById("minute").innerText=`0${minute}:`
+        }else{
+            document.getElementById("minute").innerText=`${minute}:`
+        }
+        if(second<10){
+            document.getElementById("second").innerText=`0${second}`
+        }else{
+            document.getElementById("second").innerText=`${second}`
+        }
+        
+    }
+    dh=setInterval(tg,1000);
+
+</script>
+<!-- Cài đặt mặc định -->
+<script>
+    document.getElementById("show").style.display="none";
+    function showcart(){
+        var x= document.getElementById("show");
+        if(x.style.display=="block"){
+            x.style.display="none";
+        }else{
+            x.style.display="block";
+        }
+    }
+</script>

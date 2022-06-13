@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    background-color:black;
+}
+
+#slide {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+#slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide i:first-child {
+    position: absolute;
+    left: 20px;
+    top: 40%;
+    font-size: 40px;
+    color:black;
+}
+
+#slide i:last-child {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    font-size: 40px;
+    color: black;
+}
+
+#slide p#dem {
+    text-align: center;
+}
+.dongho{
+    background-color: lightgrey;
+}
+
+.menub {
+    height: 38px;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    padding-right: 80px;
+}
+
+.menub a {
+    margin-left: 80px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.menub a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav {
+    background-color:black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.smenu {
+    width: 375px;
+}
+
+.smenu input {
+    width: 392px;
+    height: 25px;
+}
+
+article {
+    width: 100%;
+    margin: 15px;
+}
+
+#products {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px gray;
+}
+
+.card {
+    width: 26%;
+}
+
+footer {
+    clear: both;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 20%;
+    background-color: palegoldenrod;
+}
+
+.tacgia {
+    font-variant: small-caps;
+    color: orangered;
+    text-align: center;
+}
+
+.hotro {
+    width: 25%;
+    float: left;
+}
+
+footer .hotro h3 {
+    margin: 30px 0 10px 30px;
+}
+
+footer .hotro p {
+    margin: 10px 0 10px 30px;
+}
+
+.gt {
+    border-radius: 0 10px 0 10px;
+    background-color: bisque;
+    color: black;
+    font-size: 20px;
+}
+.time{
+    display: flex;
+    justify-content: center;
+}
+.sp{
+    text-align: center;
+    font-size: 10px;
+}

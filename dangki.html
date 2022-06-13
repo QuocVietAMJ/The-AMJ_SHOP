@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMJ_ShopLogin</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-image: url("./img/nen1.jpg");
+        }
+        .login1{
+            float: left;
+            display: block;
+            margin-right: 280px;
+            margin-left: 20px;
+            color:lightseagreen;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-decoration:dotted black;
+        }
+        .login2{
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .h2{
+            color:lightgrey;
+            font-size: small;
+        }
+        .box{
+            padding-top: 20px;
+            background-color: white;
+            color: black;
+            padding-left: 250px;
+            width: 500px;
+            height:auto;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 2px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px gray;
+            margin: 0 auto;
+        }
+        .header{
+            color:black;
+            text-align: center;
+        }
+        .back{
+            position: absolute;
+            padding-left: 50px;
+            cursor: pointer;
+        }
+        .form-group{
+            margin: 10px 2px ;
+            font-size: larger;
+            font-style: normal;
+        }
+        .control{
+            width: 95%;
+            border-radius: 5px;
+            height: 30px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        .button{
+            border-radius: 5px;
+            width: 120px;
+            height: 40px;
+            background-color:lightseagreen;
+            cursor: pointer;
+            color:black;
+        }
+        .button:hover{
+            background-color:red;
+        }
+        .sothich{
+            border: solid 1px black;
+            width: auto;
+            border-radius: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        #kq{
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="">
+    <div class="header">
+        <p class="back"> <=The shop </p>
+        <h1>AMJ</h1>
+    </div>
+    <div class="box">
+        <div class="login">
+            <div class="login1">LOGIN</div>
+            <div class="login2">CREATACCOUNT</div>
+        </div>
+        <h2 class="h2">Login to purchase products, add to your wishlist and follow your favourite brands!</h2>
+        <hr>
+        <form class="form">
+            <div class="form-group">
+                <label>Your Name:</label><br>
+                <input id="hoten" class="control" type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label >Phone:</label><br>
+                <input id="masv" class="control" type="text" placeholder="Enter your phone">
+            </div>
+            
+            <div class="form-group">
+                <label>Email :</label><br>
+                <input id="mail" class="control" type="text" placeholder="Enter your email ">
+            </div>
+            <div class="form-group">
+                <label>Address:</label><br>
+                <input id="mail" class="control" type="text" placeholder="Enter your address" >
+            </div>
+            
+            <label>
+                <input type="checkbox" name="re"/>
+                Remember me?
+            </label>
+            <hr>
+            <button type="submit" class="button" onclick="return kiemtra()">Login</button>
+            <div id="kq"></div>
+        </form>
+    </div>
+    <script>
+        function kiemtra(){
+            thanhcong=true;
+            thongbao="";
+            //kiểm tra name
+            var masv=document.getElementById("masv");
+            if(masv.value.length==0){
+                thongbao+="Enter your name ! Please<br>";
+                thanhcong=false;
+            }
+            //kiểm tra ho và tên
+            var hoten=document.getElementById("hoten");
+            if(hoten.value.length==0){
+                thongbao+="Enter your phone ! Please<br>";
+                thanhcong=false;
+            }
+            //kiểm tra email
+            var mail=document.getElementById("mail");
+            if(mail.value.length==0){
+                thongbao+="Enter your email ! Please<br>";
+                thanhcong=false;
+            }
+            if(thongbao=="") thongbao="Login Successful";
+            document.getElementById("kq").innerHTML=thongbao;
+            return thanhcong;
+        }
+    </script>
+</body>
+</html>

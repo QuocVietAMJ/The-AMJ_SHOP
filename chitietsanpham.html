@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asm.css">
+    <style>
+        .detail_img {
+            display: flex;
+            width: 50%;
+            max-height: 300px;
+            margin-left: 10px;
+        }
+
+        .detail_img1 {
+            position: absolute;
+            width: 12%;
+
+        }
+
+        .detail_img1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .detail_img2 {
+            position: absolute;
+            width: 38%;
+            margin-left: 200px;
+
+        }
+
+        .detail_img2 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .detail_content {
+            float: right;
+            width: 40%;
+            max-height: 400px;
+            line-height: 32px;
+
+        }
+
+        .add {
+            width: 120px;
+            height: 40px;
+            background-color: aqua;
+            color: white;
+            cursor: pointer;
+        }
+
+        .add:hover {
+            background: orange;
+            color: black;
+        }
+
+        .seemore {
+            text-align: center;
+            background-color: aquamarine;
+            color: black;
+            margin-top: 750px;
+            font-size: 20px;
+        }
+        .cot{
+            
+            width: 20%;
+            height: 500px;
+            float: left;
+            margin: 0 0 20px 0;
+        }
+        .sp{
+            border-radius: 10px;
+            padding: 5px;
+            margin:1%;
+            box-shadow: inset;
+            
+        }
+        .sp >img{
+            width: 95%;
+            height: 250px;
+        }
+        .sp .ten{
+            font-variant: small-caps;
+            color:black;
+            
+            font-size: large;
+            font-weight:bold;
+            margin-bottom: 5px;
+        }
+        .sp .gia{
+            
+            color:red;
+            font-size: large;
+            font-weight: bold;
+
+        }
+        .sp .gia del{
+            color: grey;
+        }
+        .sp .buy{
+            color: aqua;
+            font-size: 25px;
+        }
+        .sp .buy:hover{
+            background-color:red;
+        }
+        .h1{
+            background-size: 20px;
+            text-align: center;
+            font-variant: small-caps;
+            color: brown;
+        }
+        .xem{
+            text-align: center;
+            font-variant: normal;
+        }
+        .xem:hover{
+            background-color: pink;
+        }
+        .footer{
+            float: left;
+            width: 100%;
+            height: 300px;
+            background: #0D0D0D;
+            margin-top: 60px;
+        }
+        .hotro{
+            width: 25%;
+            float: left;
+            color: white;
+            max-height: 180px;
+        }
+        footer .hotro h3{
+            margin: 30px 0 10px 30px;
+        }
+        footer .hotro p{
+            margin: 10px 0 10px 30px;
+        }
+        .tacgia{
+            clear: both;
+            width: 100%;
+            height: auto;
+            font-variant: small-caps;
+            color:black;
+            text-align: center;
+        }
+            </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="">Contact & FAQs</a>
+            </li>
+            <li>
+                <a href="">Delivery</a>
+            </li>
+            <li>
+                <a href="">Returns</a>
+            </li>
+            <li>
+                <a href="">Track Orders</a>
+            </li>
+            <li>
+                <a href="">Share your Ideas</a>
+            </li>
+            <li>
+                <a href="">Gilf Card</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header">
+        <div class="toggle1">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            AMJ
+        </div>
+        <div class="menua">
+            <a href="">WOMEN</a>
+            <a href="">MEN</a>
+            <a href="">KIDS</a>
+            <a href="">SPORTS</a>
+            <a href="">BEAUTY</a>
+        </div>
+        <div class="menub">
+            <a href="">NEW IN</a>
+            <a href="">CLOTHING</a>
+            <a href="">SHOES</a>
+            <a href="">ACCESSORIES</a>
+            <a href="">SPORT</a>
+            <a href="">HOME</a>
+            <a href="">GIFTS</a>
+            <a href="">BRANDS</a>
+            <a href="">DESIGNER</a>
+            <a href="">SNEAKERHUB</a>
+        </div>
+        <div class="user">
+            <i class="fa-solid fa-user-large"></i>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="menuc">
+        <a href="">FREE SHIPPING* FAST DELIVERY FREE RETURNS</a>
+    </div>
+    <div class="detail">
+        <div class="detail_img">
+            <div class="detail_img1">
+                <img src="./img/m1.png" alt="">
+                <img src="./img/m2.png" alt="">
+                <img src="./img/m3.png" alt="">
+            </div>
+            <div class="detail_img2">
+                <img id="hinh" src="./img/m4.png" alt="">
+                <div class="dieuhuong">
+                    <i class='bx bxs-chevron-left' onclick="prev()"></i>
+                    <i class='bx bxs-chevron-right' onclick="next()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="detail_content">
+            <p style="font-size:30px;">New curve thin wand hair culer</p>
+            <p style="color:green;">10% OFF AT CHECKOUT</p>
+            <p style="font-size: 20px; color:red;">$25 USD</p>
+            <p style="color:gray ;">Or 4 payments of $62.5 USD with <strong>afterpay</strong></p>
+            <button class="add">ADD TO BAG</button>
+            <hr>
+            <h1>Delivery</h1>
+            <p>This item is sent directly from our partner and will arrive separately
+                if ordered with other items.</p>
+            <h1>Return</h1>
+            <strong>The AMJ return are free for 30 day unless marked</strong>
+            <h1>NOW SHIPPING TO NEW ZEALAND</h1>
+            <p>The new ghd thin wand is perfect for creating tight, defined, 
+                even curls from as little as 3 seconds. The thin wand has a 
+                14mm barrel with advanced ceramic coating for creating defined 
+                and even curls, that last up to 24hours. The +38% longer barrel 
+                has been designed for quick styling, even on longer hair. If you
+                are looking for long-lasting curl definition to enhance your natural
+                curl or create beautiful cascading waves, look no further, the ghd 
+                thin wand has you covered! ghd thin wand also features PTC heater 
+                technology that maintains the optimum styling temperature 185°C for 
+                effective curling with less damage. The thin wand has a lightweight and
+                ergonomic design, a protective cool tip that provides a safe place to h
+                old the curler whilst you curl, a built-in safety stand for securing the
+                wand on a hard surface while not in use and a 2.7m professional length 
+                swivel cord for styling freedom</p>
+        </div>
+    </div>
+    <div class="seemore">
+        You can see more
+    </div>
+    <div class="div">
+        <div class="cot">
+            <div class="sp">
+                <img src="./img/m3.png" alt="">
+                <div class="ten">NEW curve® thin wand hair curler</div>
+                <div class="gia"><del>$50000</del> - $20000</div>
+                <div ><a href="../doquocviet_ASM/thongtinsanpham.html"  class="buy">Buy</a></div>
+            </div>
+        </div>
+        <div class="cot">
+            <div class="sp" >
+                <img  src="./img/m5.png" alt="">
+                <div class="ten">NEW curve® thin wand hair curler</div>
+                <div class="gia"><del>$1900000</del> - $1500000</div>
+                <div ><a href="../doquocviet_ASM/thongtinsanpham.html"  class="buy">Buy</a></div>
+            </div>
+        </div>
+        <div class="cot">
+            <div class="sp">
+                <img src="./img/m7.png" alt="">
+                <div class="ten">NEW curve® thin wand hair curler</div>
+                <div class="gia"><del>$500000</del> - $250000</div>
+                <div ><a href="../doquocviet_ASM/thongtinsanpham.html"  class="buy">Buy</a></div>
+            </div>
+        </div>
+        <div class="cot">
+            <div class="sp">
+                <img src="./img/m4.png" alt="">
+                <div class="ten">NEW curve® thin wand hair curler</div>
+                <div class="gia"><del>$1200000</del> - $999999</div>
+                <div ><a href="../doquocviet_ASM/thongtinsanpham.html"  class="buy">Buy</a></div>
+            </div>
+        </div>
+        <div class="cot">
+            <div class="sp">
+                <img src="./img/m6.png" alt="">
+                <div class="ten">NEW curve® thin wand hair curler</div>
+                <div class="gia"><del>$900000</del> - $750000</div>
+                <div ><a href="../doquocviet_ASM/thongtinsanpham.html"  class="buy">Buy</a></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="hotro">
+            <h3> Chính sách</h3>
+            <p>
+                Trả góp<br>
+                Ưu đãi đối tác<br>
+                Điều kiện giao dịch<br>
+                Bảo vệ thông tin người dùng<br>
+                Bảo mật giao dịch của khách hàng<br>
+                Chính sách bảo hành<br>
+                Chính sách và quy định thanh toán<br>
+                Chính sách 30 ngày đổi mới<br>
+            </p>
+        </div>
+        <div class="hotro">
+            <h3> Hỗ trợ khách hàng</h3>
+            <p>
+                Hướng dẫn mua hàng<br>
+                Hóa đơn điện tử<br>
+                Câu hỏi thường gặp<br>
+                Vận chuyển và giao nhận<br>
+                Phương thức thanh toán<br>
+                Tra cứu đơn hàng<br>
+                Bảng giá dịch vụ lắp đặt<br>
+            </p>
+        </div>
+        <div class="hotro">
+            <h3>Thông tin khác</h3>
+            <p>
+                Email: AMJ@gmail.com<br>
+                Mua hàng - Góp ý - Bảo hành<br>
+                Gọi: 19008168 Miễn phí<br>
+                Sơ đồ trang web<br>
+                Cảnh báo giả mạo<br>
+                Kênh tiếp nhận phản ánh về hối lộ<br>
+            </p>
+        </div>
+        <div class="hotro">
+            <h3>Thông tin công ty</h3>
+            <p>
+                Giới thiệu công ty <br>
+                Quy chế hoạt động sàn TMĐT <br>
+                Hệ thống cửa hàng <br>
+                Mua hàng doanh nghiệp <br>
+                Tuyển dụng <br>
+                Liên hệ <br>
+            </p>
+        </div>
+    </footer>
+    <div class="tacgia">
+        <hr>
+        <p>
+            Được thiết kế bởi: Đỗ Quốc Việt_PS21179
+        </p>
+    </div>
+</body>
+
+</html>
+<script>
+    var arr_hinh = [
+        "./img/m4.png",
+        "./img/m5.png",
+        "./img/m6.png",
+
+    ]
+    var index = 0;
+    function next() {
+        index++;
+        if (index >= arr_hinh.length) index = 0;
+        var hinh = document.getElementById("hinh");
+        hinh.src = arr_hinh[index];
+        document.getElementById("dem").innerHTML = "" + index + "/" + arr_hinh.length;
+
+    }
+    function prev() {
+        index--;
+        if (index >= arr_hinh.length) index = 0;
+        var hinh = document.getElementById("hinh");
+        hinh.src = arr_hinh[index];
+        document.getElementById("dem").innerHTML = "" + index + "/" + arr_hinh.length;
+    }
+    setInterval("next()", 3000);
+    let dh;
+</script>
